@@ -49,7 +49,7 @@ A frontend web platform connecting buyers and sellers for bulk trading without m
 🎓 CS Student | Aspiring Software Engineer
 
 📧 Email: [anushrivastav6467@gmail.com](mailto:anushrivastav6467@gmail.com)
-🔗 LinkedIn: https://linkedin.com/in/anushka-shrivastav-8a5043330
+🔗 LinkedIn: https://www.linkedin.com/in/anushka-shrivastav-8a5043330
 
 ---
 
