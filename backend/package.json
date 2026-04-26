@@ -1,9 +1,8 @@
 {
   "name": "b2b-trade-portal-backend",
   "version": "1.0.0",
-  "description": "B2B Trade Portal deployed on Render",
+  "description": "Render deployed B2B portal",
   "main": "server.js",
-  "type": "commonjs",
   "scripts": {
     "start": "node server.js"
   },
