@@ -1,20 +1,19 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
 
-/* ------------------- In-Memory Database ------------------- */
+/* -------- In-Memory DB -------- */
 let users = [];
 let products = [];
 let orders = [];
 
-/* ------------------- AUTH ROUTES ------------------- */
-
-// Register
+/* -------- AUTH -------- */
 app.post("/register", (req, res) => {
   const { name, email, password, role } = req.body;
 
@@ -22,12 +21,12 @@ app.post("/register", (req, res) => {
     return res.json({ success: false, message: "All fields required" });
   }
 
-  const existingUser = users.find(u => u.email === email);
-  if (existingUser) {
+  const exists = users.find(u => u.email === email);
+  if (exists) {
     return res.json({ success: false, message: "User already exists" });
   }
 
-  const newUser = {
+  const user = {
     id: Date.now(),
     name,
     email,
@@ -35,15 +34,11 @@ app.post("/register", (req, res) => {
     role: role || "buyer"
   };
 
-  users.push(newUser);
+  users.push(user);
 
-  res.json({
-    success: true,
-    user: newUser
-  });
+  res.json({ success: true, user });
 });
 
-// Login
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
@@ -55,20 +50,15 @@ app.post("/login", (req, res) => {
     return res.json({ success: false, message: "Invalid credentials" });
   }
 
-  res.json({
-    success: true,
-    user
-  });
+  res.json({ success: true, user });
 });
 
-/* ------------------- PRODUCT ROUTES ------------------- */
-
-// Add product (seller)
+/* -------- PRODUCTS -------- */
 app.post("/products", (req, res) => {
   const { name, price, quantity, sellerId } = req.body;
 
   if (!name || !price || !quantity) {
-    return res.json({ success: false, message: "Missing fields" });
+    return res.json({ success: false });
   }
 
   const product = {
@@ -84,14 +74,11 @@ app.post("/products", (req, res) => {
   res.json({ success: true, product });
 });
 
-// Get all products
 app.get("/products", (req, res) => {
   res.json({ success: true, products });
 });
 
-/* ------------------- ORDER ROUTES ------------------- */
-
-// Place order (buyer)
+/* -------- ORDERS -------- */
 app.post("/orders", (req, res) => {
   const { productId, buyerId, quantity } = req.body;
 
@@ -114,19 +101,18 @@ app.post("/orders", (req, res) => {
   res.json({ success: true, order });
 });
 
-// Get all orders
 app.get("/orders", (req, res) => {
   res.json({ success: true, orders });
 });
 
-/* ------------------- DEFAULT ROUTE ------------------- */
+/* -------- SERVE FRONTEND (MOST IMPORTANT) -------- */
+app.use(express.static(path.join(__dirname, "../frontend")));
 
-app.get("/", (req, res) => {
-  res.send("B2B Trade Portal Backend Running 🚀");
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/index.html"));
 });
 
-/* ------------------- START SERVER ------------------- */
-
+/* -------- START -------- */
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
