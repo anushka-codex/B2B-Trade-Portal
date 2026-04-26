@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace · B2B Trade Portal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="/">
+          <div class="brand-mark">B2</div>
+          <span>B2B Trade Portal</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/products">Marketplace</a>
+          <a href="/login">Login</a>
+          <a class="btn btn-sm" href="/register">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="page-header">
+        <div>
+          <h1>Marketplace</h1>
+          <p>Browse bulk products direct from sellers.</p>
+        </div>
+      </div>
+      <div class="toolbar">
+        <input id="search" class="search" placeholder="Search products, categories, or sellers..." />
+        <select id="category">
+          <option value="">All categories</option>
+        </select>
+      </div>
+      <div id="grid" class="product-grid"></div>
+    </main>
+
+    <script src="/script.js"></script>
+    <script>
+      (async function () {
+        const grid = document.getElementById("grid");
+        const search = document.getElementById("search");
+        const categorySel = document.getElementById("category");
+
+        try {
+          const { categories } = await TP.api.categories();
+          for (const c of categories) {
+            const opt = document.createElement("option");
+            opt.value = c.name;
+            opt.textContent = `${c.name} (${c.count})`;
+            categorySel.appendChild(opt);
+          }
+        } catch (e) {
+          /* ignore */
+        }
+
+        async function load() {
+          grid.innerHTML = "<p style='color:var(--text-muted)'>Loading...</p>";
+          try {
+            const { products } = await TP.api.products({
+              search: search.value,
+              category: categorySel.value,
+            });
+            if (!products.length) {
+              grid.innerHTML =
+                "<div class='empty'><div class='big'>No products found</div>Try adjusting your filters.</div>";
+              return;
+            }
+            grid.innerHTML = "";
+            for (const p of products) {
+              const img = p.imageUrl
+                ? TP.el("div", { class: "product-img" }, [
+                    TP.el("img", { src: p.imageUrl, alt: p.name }),
+                  ])
+                : TP.el(
+                    "div",
+                    { class: "product-img" },
+                    (p.name || "?")
+                      .split(" ")
+                      .slice(0, 2)
+                      .map((s) => s[0])
+                      .join("")
+                      .toUpperCase(),
+                  );
+              const card = TP.el("div", { class: "product-card" }, [
+                img,
+                TP.el("span", { class: "cat" }, p.category),
+                TP.el("h3", null, p.name),
+                TP.el("div", { class: "seller" }, "by " + p.sellerName),
+                TP.el("p", { class: "desc" }, p.description),
+                TP.el("div", { class: "meta" }, [
+                  TP.el("span", { class: "price" }, TP.fmtMoney(p.price)),
+                  TP.el("span", { class: "moq" }, "MOQ " + p.minOrderQty),
+                ]),
+                TP.el(
+                  "div",
+                  {
+                    class:
+                      "stock " +
+                      (p.stock === 0 ? "out" : p.stock < 10 ? "low" : ""),
+                  },
+                  p.stock === 0
+                    ? "Out of stock"
+                    : p.stock + " units available",
+                ),
+                (function () {
+                  const wrap = TP.el("div", {
+                    class: "product-actions",
+                    style: "margin-top:auto",
+                  });
+                  wrap.appendChild(
+                    TP.el(
+                      "a",
+                      {
+                        class: "btn btn-outline btn-sm",
+                        href: "/login",
+                      },
+                      "Sign in to order",
+                    ),
+                  );
+                  if (p.sellerEmail) {
+                    const subj = "Inquiry about " + p.name;
+                    const body =
+                      "Hello " +
+                      (p.sellerName || "there") +
+                      ",\n\nI am interested in your product \"" +
+                      p.name +
+                      "\" listed on the B2B Trade Portal.\nPrice: ₹" +
+                      Number(p.price).toLocaleString("en-IN") +
+                      "  |  MOQ: " +
+                      p.minOrderQty +
+                      "\n\nCould you share more details on availability, lead time, and bulk discounts?\n\nThanks";
+                    wrap.appendChild(
+                      TP.el(
+                        "a",
+                        {
+                          class: "btn btn-sm btn-outline icon-only",
+                          title: "Email seller",
+                          href:
+                            "mailto:" +
+                            encodeURIComponent(p.sellerEmail) +
+                            "?subject=" +
+                            encodeURIComponent(subj) +
+                            "&body=" +
+                            encodeURIComponent(body),
+                        },
+                        "✉️",
+                      ),
+                    );
+                  }
+                  return wrap;
+                })(),
+              ]);
+              grid.appendChild(card);
+            }
+          } catch (e) {
+            grid.innerHTML =
+              "<div class='empty'>Couldn't load products. Try again.</div>";
+          }
+        }
+
+        let timer;
+        search.addEventListener("input", () => {
+          clearTimeout(timer);
+          timer = setTimeout(load, 200);
+        });
+        categorySel.addEventListener("change", load);
+
+        load();
+      })();
+    </script>
+  </body>
+</html>

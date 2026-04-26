@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register · B2B Trade Portal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="/">
+          <div class="brand-mark">B2</div>
+          <span>B2B Trade Portal</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/products">Marketplace</a>
+          <a href="/login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-shell">
+      <div class="auth-card">
+        <h2>Create your account</h2>
+        <p class="muted">Choose how you'd like to use the portal.</p>
+
+        <div class="role-toggle" role="tablist">
+          <button type="button" data-role="buyer" class="active">I'm a Buyer</button>
+          <button type="button" data-role="seller">I'm a Seller</button>
+        </div>
+
+        <div id="alert" class="alert error" style="display:none"></div>
+
+        <form id="register-form">
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="form-group">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required minlength="6" autocomplete="new-password" />
+          </div>
+          <button class="btn" type="submit" id="submit-btn" style="width:100%">
+            Create account
+          </button>
+        </form>
+
+        <div class="auth-foot">
+          Already have an account? <a href="/login">Sign in</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="/script.js"></script>
+    <script>
+      (async function () {
+        try {
+          const { user } = await TP.api.me();
+          window.location.href = TP.dashPathFor(user.role);
+          return;
+        } catch (e) {
+          /* not logged in, continue */
+        }
+
+        let role = "buyer";
+        const toggleBtns = document.querySelectorAll(".role-toggle button");
+        toggleBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            role = btn.dataset.role;
+            toggleBtns.forEach((b) => b.classList.toggle("active", b === btn));
+          });
+        });
+
+        const alertEl = document.getElementById("alert");
+        const form = document.getElementById("register-form");
+        const submitBtn = document.getElementById("submit-btn");
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          TP.showAlert(alertEl, "");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Creating account...";
+          try {
+            const data = await TP.api.register({
+              name: form.name.value.trim(),
+              company: form.company.value.trim() || undefined,
+              email: form.email.value.trim(),
+              password: form.password.value,
+              role,
+            });
+            TP.cacheUser(data.user);
+            window.location.href = TP.dashPathFor(data.user.role);
+          } catch (err) {
+            TP.showAlert(alertEl, err.message || "Registration failed", "error");
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Create account";
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

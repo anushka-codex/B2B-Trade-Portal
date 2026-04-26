@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard · B2B Trade Portal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/">
+          <div class="brand-mark">B2</div>
+          <span>Trade Portal</span>
+        </a>
+        <div class="nav-section">Admin</div>
+        <nav id="nav">
+          <button data-tab="overview" class="active">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 12 12 4l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+            Dashboard
+          </button>
+          <button data-tab="products">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+            Products
+          </button>
+          <button data-tab="orders">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+            Orders
+          </button>
+          <button data-tab="users">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            Users
+          </button>
+        </nav>
+        <div class="spacer"></div>
+        <div class="user-card">
+          <div class="avatar" id="avatar">A</div>
+          <div class="info">
+            <div class="name" id="user-name">Loading…</div>
+            <div class="role" id="user-role">admin</div>
+          </div>
+          <button class="btn btn-ghost btn-sm" id="logout-btn">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="dash-topbar">
+          <div class="greet">
+            <small>Admin workspace</small>
+            <strong id="tb-name">Welcome back</strong>
+          </div>
+          <div class="topsearch">
+            <span class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+            <input id="tb-search" placeholder="Search users, products, orders…" />
+          </div>
+          <div class="top-actions">
+            <button class="icon-btn" title="Notifications">
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+              <span class="badge-dot"></span>
+            </button>
+            <button class="icon-btn" title="Help">
+              <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span>
+            </button>
+            <div class="topbar-avatar" id="tb-avatar">A</div>
+          </div>
+        </div>
+
+        <!-- DASHBOARD TAB -->
+        <div id="page-overview" class="page">
+          <div class="welcome-banner welcome-banner-admin">
+            <div class="wb-text">
+              <span class="role-pill role-pill-admin">Admin</span>
+              <h1>Welcome back, <span id="hi-name">Admin</span> 👋</h1>
+              <p>Monitor your marketplace at a glance.</p>
+            </div>
+            <div class="wb-cta">
+              <button class="btn btn-light" data-jump="users">Manage users</button>
+              <button class="btn btn-translucent" data-jump="products">Browse catalog</button>
+            </div>
+          </div>
+
+          <div class="stats-grid" id="admin-stats"></div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Recent signups</h2>
+              <button class="btn btn-ghost btn-sm" data-jump="users">View all users</button>
+            </div>
+            <div id="recent-users"></div>
+          </div>
+        </div>
+
+        <!-- PRODUCTS TAB -->
+        <div id="page-products" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>All products</h1>
+              <p>Every listing across the marketplace.</p>
+            </div>
+          </div>
+          <div id="admin-products" class="product-grid"></div>
+        </div>
+
+        <!-- ORDERS TAB -->
+        <div id="page-orders" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>Order activity</h1>
+              <p>Recent orders placed across the platform.</p>
+            </div>
+          </div>
+          <div class="card">
+            <p class="muted" style="margin:0">
+              Order history is available from each seller and buyer dashboard. Total orders to date:
+              <strong id="orders-total">—</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- USERS TAB -->
+        <div id="page-users" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>Users management</h1>
+              <p>Browse every buyer and seller registered on the portal.</p>
+            </div>
+          </div>
+
+          <div class="users-toolbar">
+            <div class="users-stats">
+              <div class="users-stat">
+                <span class="lbl">Total users</span>
+                <strong id="ucount-total">—</strong>
+              </div>
+              <div class="users-stat users-stat-seller">
+                <span class="lbl">Sellers</span>
+                <strong id="ucount-seller">—</strong>
+              </div>
+              <div class="users-stat users-stat-buyer">
+                <span class="lbl">Buyers</span>
+                <strong id="ucount-buyer">—</strong>
+              </div>
+            </div>
+            <div class="users-controls">
+              <div class="users-search">
+                <span class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+                <input id="users-search" placeholder="Search by name, email, company…" />
+              </div>
+              <select id="users-filter" class="users-select">
+                <option value="all">All roles</option>
+                <option value="seller">Sellers only</option>
+                <option value="buyer">Buyers only</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="card card-flush">
+            <div class="table-wrap">
+              <table class="users-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Company</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody id="users-tbody">
+                  <tr>
+                    <td colspan="5" class="users-empty">Loading users…</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="users-foot">
+              <span id="users-shown">0 of 0 users</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="/users.js"></script>
+  </body>
+</html>

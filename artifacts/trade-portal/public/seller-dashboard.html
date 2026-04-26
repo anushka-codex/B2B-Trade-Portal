@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Dashboard · B2B Trade Portal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/">
+          <div class="brand-mark">B2</div>
+          <span>Trade Portal</span>
+        </a>
+        <div class="nav-section">Workspace</div>
+        <nav id="nav">
+          <button data-tab="overview" class="active">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 12 12 4l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+            Overview
+          </button>
+          <button data-tab="add">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            Add Product
+          </button>
+          <button data-tab="products">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+            My Products
+          </button>
+          <button data-tab="orders">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+            Orders Received
+          </button>
+          <button data-tab="messages">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            Messages
+            <span class="nav-badge" id="msg-badge" hidden>0</span>
+          </button>
+        </nav>
+        <div class="spacer"></div>
+        <div class="user-card">
+          <div class="avatar" id="avatar">?</div>
+          <div class="info">
+            <div class="name" id="user-name">Loading…</div>
+            <div class="role" id="user-role">seller</div>
+          </div>
+          <button class="btn btn-ghost btn-sm" id="logout-btn">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="dash-topbar">
+          <div class="greet">
+            <small>Seller workspace</small>
+            <strong id="tb-name">Welcome back</strong>
+          </div>
+          <div class="topsearch">
+            <span class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+            <input id="tb-search" placeholder="Search products, orders, buyers…" />
+          </div>
+          <div class="top-actions">
+            <button class="icon-btn" title="Notifications" id="tb-notif">
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+              <span class="badge-dot"></span>
+            </button>
+            <button class="icon-btn" title="Help">
+              <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span>
+            </button>
+            <div class="topbar-avatar" id="tb-avatar">?</div>
+          </div>
+        </div>
+
+        <div id="page-overview" class="page">
+          <div class="welcome-banner">
+            <div class="wb-text">
+              <span class="role-pill">Seller</span>
+              <h1>Welcome back, <span id="hi-name">there</span> 👋</h1>
+              <p id="hi-sub">Here's how your store is performing today.</p>
+            </div>
+            <div class="wb-cta">
+              <button class="btn btn-light" data-jump="add">+ Add product</button>
+              <button class="btn btn-translucent" data-jump="orders">View orders</button>
+            </div>
+          </div>
+
+          <div class="stats-grid" id="stats"></div>
+
+          <div class="charts-row">
+            <div class="chart-card">
+              <h3>Orders over time</h3>
+              <p class="chart-sub">Last 14 days</p>
+              <div class="chart-canvas-wrap">
+                <canvas id="ordersChart"></canvas>
+              </div>
+            </div>
+            <div class="chart-card">
+              <h3>Order status</h3>
+              <p class="chart-sub">All-time breakdown</p>
+              <div class="chart-canvas-wrap">
+                <canvas id="statusChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Recent orders</h2>
+              <button class="btn btn-ghost btn-sm" data-jump="orders">View all</button>
+            </div>
+            <div id="recent-orders"></div>
+          </div>
+        </div>
+
+        <div id="page-add" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>Add a new product</h1>
+              <p>List a product available for bulk orders.</p>
+            </div>
+          </div>
+          <div class="card" style="max-width:680px">
+            <div id="add-alert" class="alert" style="display:none"></div>
+            <form id="add-form">
+              <div class="form-group">
+                <label for="p-name">Product name</label>
+                <input id="p-name" name="name" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="p-category">Category</label>
+                  <input id="p-category" name="category" required placeholder="e.g. Spices, Textiles" />
+                </div>
+                <div class="form-group">
+                  <label for="p-price">Unit price (INR)</label>
+                  <input id="p-price" name="price" type="number" min="0" step="0.01" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="p-min">Minimum order qty</label>
+                  <input id="p-min" name="minOrderQty" type="number" min="1" value="1" required />
+                </div>
+                <div class="form-group">
+                  <label for="p-stock">Stock available</label>
+                  <input id="p-stock" name="stock" type="number" min="0" value="0" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="p-image">Product image URL (optional)</label>
+                <input id="p-image" name="imageUrl" type="url" placeholder="https://…/photo.jpg" />
+              </div>
+              <div class="form-group">
+                <label for="p-desc">Description</label>
+                <textarea id="p-desc" name="description" rows="4" placeholder="Origin, quality grade, packaging, MOQ notes…"></textarea>
+              </div>
+              <button type="submit" class="btn" id="add-submit">Publish product</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="page-products" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>My products</h1>
+              <p>Everything you've listed for bulk orders.</p>
+            </div>
+            <button class="btn btn-outline" data-jump="add">+ Add product</button>
+          </div>
+          <div id="my-products" class="product-grid"></div>
+        </div>
+
+        <div id="page-messages" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>Messages</h1>
+              <p>Reply to buyer inquiries about your products.</p>
+            </div>
+          </div>
+          <div id="messages-root" class="inbox-shell"></div>
+        </div>
+
+        <div id="page-orders" class="page" hidden>
+          <div class="page-header">
+            <div>
+              <h1>Orders received</h1>
+              <p>Manage incoming bulk orders from buyers.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Product</th>
+                  <th>Buyer</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="orders-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="/chat.js"></script>
+    <script>
+      (async function () {
+        // Optimistic UI from cached user — replaced when the server confirms.
+        const cached = TP.readCachedUser();
+        if (cached && cached.role === "seller") {
+          document.getElementById("user-name").textContent = cached.name;
+          document.getElementById("user-role").textContent =
+            cached.company || "seller";
+          document.getElementById("hi-name").textContent =
+            cached.name.split(" ")[0];
+          document.getElementById("avatar").textContent = TP.initials(cached.name);
+        }
+
+        const user = await TP.requireRole("seller");
+        if (!user) return;
+
+        document.getElementById("user-name").textContent = user.name;
+        document.getElementById("user-role").textContent =
+          user.company ? user.company : "seller";
+        document.getElementById("hi-name").textContent =
+          user.name.split(" ")[0];
+        document.getElementById("avatar").textContent = TP.initials(user.name);
+        document.getElementById("tb-name").textContent =
+          "Hi, " + user.name.split(" ")[0];
+        document.getElementById("tb-avatar").textContent = TP.initials(user.name);
+        document
+          .getElementById("logout-btn")
+          .addEventListener("click", TP.logoutAndGo);
+
+        const pages = {
+          overview: document.getElementById("page-overview"),
+          add: document.getElementById("page-add"),
+          products: document.getElementById("page-products"),
+          orders: document.getElementById("page-orders"),
+          messages: document.getElementById("page-messages"),
+        };
+        const navBtns = document.querySelectorAll("#nav button");
+
+        let inboxController = null;
+        function show(tab) {
+          for (const [key, el] of Object.entries(pages)) {
+            el.hidden = key !== tab;
+          }
+          navBtns.forEach((b) =>
+            b.classList.toggle("active", b.dataset.tab === tab),
+          );
+          if (tab === "overview") loadOverview();
+          if (tab === "products") loadMyProducts();
+          if (tab === "orders") loadOrders();
+          if (tab === "messages") {
+            if (inboxController) inboxController.stop();
+            const badge = document.getElementById("msg-badge");
+            inboxController = TPChat.renderInbox(
+              document.getElementById("messages-root"),
+              user,
+              {
+                onUnread: (n) => {
+                  if (n > 0) {
+                    badge.hidden = false;
+                    badge.textContent = n > 99 ? "99+" : String(n);
+                  } else {
+                    badge.hidden = true;
+                  }
+                },
+              },
+            );
+          } else if (inboxController) {
+            inboxController.stop();
+            inboxController = null;
+          }
+        }
+        navBtns.forEach((b) =>
+          b.addEventListener("click", () => show(b.dataset.tab)),
+        );
+        document.querySelectorAll("[data-jump]").forEach((b) =>
+          b.addEventListener("click", () => show(b.dataset.jump)),
+        );
+
+        let ordersChart, statusChart;
+        function renderCharts(orders) {
+          const series = TP.bucketByDay(orders, 14);
+          const ctxA = document.getElementById("ordersChart").getContext("2d");
+          if (ordersChart) ordersChart.destroy();
+          ordersChart = new Chart(ctxA, {
+            type: "line",
+            data: {
+              labels: series.labels,
+              datasets: [
+                {
+                  label: "Orders",
+                  data: series.counts,
+                  borderColor: "#2563eb",
+                  backgroundColor: "rgba(37, 99, 235, 0.12)",
+                  fill: true,
+                  tension: 0.35,
+                  pointRadius: 3,
+                  pointBackgroundColor: "#2563eb",
+                },
+              ],
+            },
+            options: {
+              maintainAspectRatio: false,
+              plugins: { legend: { display: false } },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: { precision: 0, color: "#64748b" },
+                  grid: { color: "#e2e8f0" },
+                },
+                x: { ticks: { color: "#64748b" }, grid: { display: false } },
+              },
+            },
+          });
+
+          const counts = TP.statusBreakdown(orders);
+          const ctxB = document.getElementById("statusChart").getContext("2d");
+          if (statusChart) statusChart.destroy();
+          statusChart = new Chart(ctxB, {
+            type: "doughnut",
+            data: {
+              labels: ["Pending", "Accepted", "Shipped", "Delivered", "Cancelled"],
+              datasets: [
+                {
+                  data: [
+                    counts.pending,
+                    counts.accepted,
+                    counts.shipped,
+                    counts.delivered,
+                    counts.cancelled,
+                  ],
+                  backgroundColor: [
+                    "#f59e0b",
+                    "#3b82f6",
+                    "#22c55e",
+                    "#10b981",
+                    "#ef4444",
+                  ],
+                  borderWidth: 0,
+                },
+              ],
+            },
+            options: {
+              maintainAspectRatio: false,
+              plugins: {
+                legend: {
+                  position: "bottom",
+                  labels: { boxWidth: 10, font: { size: 11 } },
+                },
+              },
+              cutout: "60%",
+            },
+          });
+        }
+
+        async function loadOverview() {
+          try {
+            const [{ products }, { orders }] = await Promise.all([
+              TP.api.products({ mine: "true" }),
+              TP.api.orders(),
+            ]);
+            const stats = document.getElementById("stats");
+            const revenue = orders
+              .filter((o) => o.status !== "cancelled")
+              .reduce((sum, o) => sum + o.total, 0);
+            const pending = orders.filter((o) => o.status === "pending").length;
+            stats.innerHTML = "";
+            const ICONS = {
+              box: '<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>',
+              receipt: '<svg viewBox="0 0 24 24"><path d="M4 2v20l3-2 3 2 3-2 3 2 3-2 3 2V2l-3 2-3-2-3 2-3-2-3 2Z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+              clock: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+              rupee: '<svg viewBox="0 0 24 24"><path d="M6 4h12M6 9h12M14 4c2 0 4 2 4 5s-2 5-4 5H7l9 6"/></svg>',
+            };
+            const data = [
+              ["Active products", String(products.length), ICONS.box, ""],
+              ["Total orders", String(orders.length), ICONS.receipt, "accent-purple"],
+              ["Pending", String(pending), ICONS.clock, "accent-amber"],
+              ["Lifetime revenue", TP.fmtMoney(revenue), ICONS.rupee, "accent-green"],
+            ];
+            for (const [label, value, iconSvg, accent] of data) {
+              const iconEl = TP.el("div", { class: "stat-icon" }, [
+                TP.el("span", { class: "ico" }),
+              ]);
+              iconEl.querySelector(".ico").innerHTML = iconSvg;
+              const card = TP.el("div", { class: "stat-card " + accent }, [
+                iconEl,
+                TP.el("div", { class: "label" }, label),
+                TP.el("div", { class: "value" }, value),
+              ]);
+              stats.appendChild(card);
+            }
+            renderCharts(orders);
+
+            const recent = document.getElementById("recent-orders");
+            recent.innerHTML = "";
+            if (!orders.length) {
+              recent.innerHTML =
+                "<div class='empty'><div class='big'>No orders yet</div>List products and start receiving bulk orders.</div>";
+            } else {
+              const wrap = TP.el("div", { class: "table-wrap" });
+              const table = TP.el("table");
+              table.innerHTML =
+                "<thead><tr><th>Buyer</th><th>Product</th><th>Qty</th><th>Total</th><th>Status</th></tr></thead>";
+              const tbody = TP.el("tbody");
+              orders.slice(0, 5).forEach((o) => {
+                const tr = TP.el("tr", null, [
+                  TP.el("td", null, o.buyerCompany || o.buyerName),
+                  TP.el("td", null, o.productName),
+                  TP.el("td", null, String(o.quantity)),
+                  TP.el("td", null, TP.fmtMoney(o.total)),
+                  TP.el("td", null, [
+                    TP.el(
+                      "span",
+                      { class: "status-badge " + o.status },
+                      o.status,
+                    ),
+                  ]),
+                ]);
+                tbody.appendChild(tr);
+              });
+              table.appendChild(tbody);
+              wrap.appendChild(table);
+              recent.appendChild(wrap);
+            }
+          } catch (e) {
+            console.error(e);
+          }
+        }
+
+        function productImage(p) {
+          if (p.imageUrl) {
+            return TP.el("div", { class: "product-img" }, [
+              TP.el("img", { src: p.imageUrl, alt: p.name }),
+            ]);
+          }
+          const initials = (p.name || "?")
+            .split(" ")
+            .slice(0, 2)
+            .map((s) => s[0])
+            .join("")
+            .toUpperCase();
+          return TP.el("div", { class: "product-img" }, initials);
+        }
+
+        async function loadMyProducts() {
+          const grid = document.getElementById("my-products");
+          grid.innerHTML = "<p style='color:var(--text-muted)'>Loading...</p>";
+          try {
+            const { products } = await TP.api.products({ mine: "true" });
+            if (!products.length) {
+              grid.innerHTML =
+                "<div class='empty'><div class='big'>You haven't listed anything yet</div>Add your first product to get started.</div>";
+              return;
+            }
+            grid.innerHTML = "";
+            for (const p of products) {
+              const card = TP.el("div", { class: "product-card" }, [
+                productImage(p),
+                TP.el("span", { class: "cat" }, p.category),
+                TP.el("h3", null, p.name),
+                TP.el("p", { class: "desc" }, p.description || "No description"),
+                TP.el("div", { class: "meta" }, [
+                  TP.el("span", { class: "price" }, TP.fmtMoney(p.price)),
+                  TP.el("span", { class: "moq" }, "MOQ " + p.minOrderQty),
+                ]),
+                TP.el(
+                  "div",
+                  {
+                    class:
+                      "stock " +
+                      (p.stock === 0 ? "out" : p.stock < 10 ? "low" : ""),
+                  },
+                  p.stock === 0
+                    ? "Out of stock"
+                    : p.stock + " units available",
+                ),
+              ]);
+              grid.appendChild(card);
+            }
+          } catch (e) {
+            grid.innerHTML = "<div class='empty'>Failed to load.</div>";
+          }
+        }
+
+        async function loadOrders() {
+          const tbody = document.getElementById("orders-tbody");
+          tbody.innerHTML = "";
+          try {
+            const { orders } = await TP.api.orders();
+            if (!orders.length) {
+              const tr = TP.el("tr", null, [
+                TP.el(
+                  "td",
+                  { colspan: 8, class: "empty" },
+                  "No orders yet — buyers' orders will appear here.",
+                ),
+              ]);
+              tbody.appendChild(tr);
+              return;
+            }
+            for (const o of orders) {
+              const tr = TP.el("tr", null, [
+                TP.el(
+                  "td",
+                  null,
+                  "#" + o.id.slice(2, 8).toUpperCase(),
+                ),
+                TP.el("td", null, o.productName),
+                TP.el("td", null, o.buyerCompany || o.buyerName),
+                TP.el("td", null, String(o.quantity)),
+                TP.el("td", null, TP.fmtMoney(o.total)),
+                TP.el("td", null, TP.fmtDate(o.createdAt)),
+                TP.el("td", null, [
+                  TP.el(
+                    "span",
+                    { class: "status-badge " + o.status },
+                    o.status,
+                  ),
+                ]),
+                TP.el("td", null, buildActions(o)),
+              ]);
+              tbody.appendChild(tr);
+            }
+          } catch (e) {
+            tbody.innerHTML =
+              "<tr><td colspan='8' class='empty'>Failed to load orders.</td></tr>";
+          }
+        }
+
+        function buildActions(o) {
+          if (o.status === "delivered" || o.status === "cancelled") {
+            return TP.el("span", { style: "color:var(--text-muted)" }, "—");
+          }
+          const wrap = TP.el("div", { style: "display:flex;gap:6px;flex-wrap:wrap" });
+          let next;
+          if (o.status === "pending") {
+            next = { label: "Accept", status: "accepted", cls: "btn btn-sm" };
+          } else if (o.status === "accepted") {
+            next = { label: "Ship", status: "shipped", cls: "btn btn-sm" };
+          } else if (o.status === "shipped") {
+            next = { label: "Mark delivered", status: "delivered", cls: "btn btn-sm btn-success" };
+          }
+          if (next) {
+            wrap.appendChild(
+              TP.el(
+                "button",
+                {
+                  class: next.cls,
+                  onClick: () => updateStatus(o.id, next.status),
+                },
+                next.label,
+              ),
+            );
+          }
+          if (o.status !== "shipped") {
+            wrap.appendChild(
+              TP.el(
+                "button",
+                {
+                  class: "btn btn-sm btn-ghost",
+                  onClick: () => updateStatus(o.id, "cancelled"),
+                },
+                "Cancel",
+              ),
+            );
+          }
+          return wrap;
+        }
+
+        async function updateStatus(id, status) {
+          try {
+            await TP.api.updateOrder(id, status);
+            loadOrders();
+          } catch (e) {
+            alert(e.message || "Failed to update order");
+          }
+        }
+
+        const addAlert = document.getElementById("add-alert");
+        const addForm = document.getElementById("add-form");
+        const addSubmit = document.getElementById("add-submit");
+        addForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          TP.showAlert(addAlert, "");
+          addSubmit.disabled = true;
+          addSubmit.textContent = "Publishing...";
+          try {
+            await TP.api.addProduct({
+              name: addForm.name.value.trim(),
+              category: addForm.category.value.trim(),
+              price: Number(addForm.price.value),
+              minOrderQty: Number(addForm.minOrderQty.value),
+              stock: Number(addForm.stock.value),
+              imageUrl: addForm.imageUrl.value.trim() || undefined,
+              description: addForm.description.value.trim(),
+            });
+            TP.showAlert(addAlert, "Product published successfully.", "success");
+            addForm.reset();
+            addForm.minOrderQty.value = 1;
+            addForm.stock.value = 0;
+          } catch (err) {
+            TP.showAlert(addAlert, err.message || "Failed to publish", "error");
+          } finally {
+            addSubmit.disabled = false;
+            addSubmit.textContent = "Publish product";
+          }
+        });
+
+        // Periodically refresh the unread badge in the sidebar
+        const msgBadge = document.getElementById("msg-badge");
+        TPChat.refreshUnreadBadge(msgBadge);
+        setInterval(() => TPChat.refreshUnreadBadge(msgBadge), 15000);
+
+        show("overview");
+      })();
+    </script>
+  </body>
+</html>

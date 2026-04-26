@@ -1,0 +1,159 @@
+Upgrade my existing B2B Trade Portal into a fully functional, feature-rich web application with advanced dashboard and profile system.
+
+---
+
+## 🎯 MAIN GOAL:
+Make the app similar to a mini marketplace like Instagram + Amazon style dashboard.
+
+---
+
+## 👤 USER PROFILE SYSTEM (VERY IMPORTANT):
+
+1. After login/register, create a USER PROFILE page:
+   - Show "Welcome, [User Name]"
+   - Profile section like Instagram:
+     - Name
+     - Email
+     - Role (Buyer/Seller)
+     - Company Name
+     - Description/About
+     - Profile Image
+
+2. Add "Edit Profile" option:
+   - User can update their details
+   - Save in localStorage or JSON
+
+---
+
+## 📊 DASHBOARD IMPROVEMENTS:
+
+### Seller Dashboard:
+- Show:
+  - Total Products
+  - Total Orders
+- Product list (with edit/view button)
+- Orders received section
+
+### Buyer Dashboard:
+- Show:
+  - Total Orders placed
+- Product browsing
+- Order history
+
+---
+
+## 🛍️ PRODUCT SYSTEM (UPGRADE):
+
+1. Product cards should be clickable
+2. When clicked:
+   - Open PRODUCT DETAIL PAGE
+   - Show:
+     - Image
+     - Name
+     - Price
+     - Quantity available
+     - Description
+
+3. Add "View Product" button
+
+---
+
+## 📦 ORDER SYSTEM:
+
+1. When buyer clicks "Order":
+   - Order should be created
+   - Stored in JSON/local storage
+
+2. Seller Dashboard:
+   - Show incoming orders
+   - Show buyer name
+   - Show product ordered
+
+---
+
+## 👥 BUYER & SELLER DIRECTORY:
+
+Create separate pages:
+
+### Seller List Page:
+- Show all sellers (default dummy data also)
+- Show:
+  - Name
+  - Company
+  - Contact
+
+### Buyer List Page:
+- Show all buyers
+- Same details
+
+---
+
+## 🔗 CONNECTION FEATURE:
+
+- Allow buyer to see seller details
+- Allow seller to see buyer details
+
+---
+
+## 🧪 DUMMY DATA (IMPORTANT):
+
+Add default sample data:
+- 5 sellers
+- 5 buyers
+- 8–10 products
+
+So app looks real even without manual entry
+
+---
+
+## 🔐 PRIVACY SETTINGS:
+
+- Add settings page:
+  - User can edit profile
+  - Change visibility (basic toggle)
+
+---
+
+## 🎨 UI DESIGN:
+
+- Modern layout
+- Sidebar navigation
+- Sections:
+  - Dashboard
+  - Profile
+  - Products
+  - Orders
+  - Buyers
+  - Sellers
+
+- Use cards + tables
+- Responsive design
+
+---
+
+## 📁 FILES TO UPDATE:
+
+- seller-dashboard.html
+- buyer-dashboard.html
+- profile.html (new)
+- product-detail.html (new)
+- style.css
+- script.js
+
+---
+
+## 🚀 FINAL REQUIREMENTS:
+
+- Do NOT break existing functionality
+- Make everything clickable and connected
+- Ensure app runs properly in Replit
+- All features must work
+
+---
+
+## OUTPUT:
+
+Provide complete updated code for:
+- New pages
+- Updated JS logic
+- UI improvements

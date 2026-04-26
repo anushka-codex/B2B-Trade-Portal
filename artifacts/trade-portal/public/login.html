@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login · B2B Trade Portal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="/">
+          <div class="brand-mark">B2</div>
+          <span>B2B Trade Portal</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/products">Marketplace</a>
+          <a href="/register">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-shell">
+      <div class="auth-card">
+        <h2>Welcome back</h2>
+        <p class="muted">Sign in to manage your products or place bulk orders.</p>
+
+        <div id="alert" class="alert error" style="display:none"></div>
+
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required autocomplete="current-password" />
+          </div>
+          <button class="btn" type="submit" id="submit-btn" style="width:100%">
+            Sign in
+          </button>
+        </form>
+
+        <div class="auth-foot">
+          New to the portal? <a href="/register">Create an account</a>
+        </div>
+
+        <div class="demo-creds">
+          <div class="demo-creds-title">Demo accounts (click to sign in)</div>
+          <div class="demo-creds-grid">
+            <button type="button" class="demo-cred" data-email="admin@trade.in" data-password="admin123">
+              <span class="role-badge role-admin">ADMIN</span>
+              <span class="dc-mail">admin@trade.in</span>
+              <span class="dc-hint">View Users dashboard</span>
+            </button>
+            <button type="button" class="demo-cred" data-email="demo.seller@test.in" data-password="demo1234">
+              <span class="role-badge role-seller">SELLER</span>
+              <span class="dc-mail">demo.seller@test.in</span>
+              <span class="dc-hint">Manage products & orders</span>
+            </button>
+            <button type="button" class="demo-cred" data-email="demo.buyer@test.in" data-password="demo1234">
+              <span class="role-badge role-buyer">BUYER</span>
+              <span class="dc-mail">demo.buyer@test.in</span>
+              <span class="dc-hint">Place bulk orders</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/script.js"></script>
+    <script>
+      (async function () {
+        try {
+          const { user } = await TP.api.me();
+          window.location.href = TP.dashPathFor(user.role);
+          return;
+        } catch (e) {
+          /* not logged in, continue */
+        }
+
+        const alertEl = document.getElementById("alert");
+        const form = document.getElementById("login-form");
+        const submitBtn = document.getElementById("submit-btn");
+
+        document.querySelectorAll(".demo-cred").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            form.email.value = btn.dataset.email;
+            form.password.value = btn.dataset.password;
+            form.requestSubmit();
+          });
+        });
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          TP.showAlert(alertEl, "");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Signing in...";
+          try {
+            const data = await TP.api.login({
+              email: form.email.value.trim(),
+              password: form.password.value,
+            });
+            TP.cacheUser(data.user);
+            window.location.href = TP.dashPathFor(data.user.role);
+          } catch (err) {
+            TP.showAlert(alertEl, err.message || "Login failed", "error");
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Sign in";
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

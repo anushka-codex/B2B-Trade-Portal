@@ -1,0 +1,1259 @@
+[
+  {
+    "id": "u_admin0000000001",
+    "email": "admin@trade.in",
+    "password": "1c0b4440dfb1354abcb022e37f67a237:6cc4b32885f8b5defb976749af91d8274487bfacad8e80cb8a13e22bc8435dc1e028595af84f846560d76a6d67bd06cdd4fe532081a5aa5cfb4340e0fe629889",
+    "name": "Portal Admin",
+    "role": "admin",
+    "company": "Trade Portal HQ",
+    "description": "Platform administrator with access to user management.",
+    "createdAt": 1777182870129
+  },
+  {
+    "id": "u_ffeb265de6d30960",
+    "email": "demo.seller@test.in",
+    "password": "3a5331ba28f20f07111d79f228351ed5:ab26ccdeca3982ba1ea6ffd4d0b61ac99c5602aee31924b8ff4d7e89c767f3fdca17a74663b06c41abdceab395cbb87fb4581b2b147ddca1ee842280a618eb1b",
+    "name": "Demo Seller",
+    "role": "seller",
+    "company": "Demo Co",
+    "createdAt": 1777142346409,
+    "description": "Lucknow-based exporter specialising in bulk organic produce for B2B clients."
+  },
+  {
+    "id": "u_6033d6948ba199ec",
+    "email": "demo.buyer@test.in",
+    "password": "17e0b6f83adced644a9aeac1de561152:cd497c18b24ac13cdfb717082c39df63061debea561ee975b737f9fde4ca937cd169c16f5b9c6575dc877b521e708efedbd47f90a39551164f12814c649936e1",
+    "name": "Demo Buyer",
+    "role": "buyer",
+    "company": "Buyer Co",
+    "createdAt": 1777142346602,
+    "description": "Procurement lead for a HoReCa group with outlets in Varanasi and nearby towns."
+  },
+  {
+    "id": "u_676102ba43579afc",
+    "email": "en23cs301174@medicaps.ac.in",
+    "password": "84da361b466996868d8d651ff36aa89a:8162349282c76e4c582a3271d82b6e595b5a0f0f2a6c5aa732ce6b45aac15ab47c68a1331c5a0a1d0eb5b11e3665cc3fca0e978bfb9a94aa4d2a5c9e8209ad11",
+    "name": "Mohan Shrivastav",
+    "role": "seller",
+    "createdAt": 1777178726190,
+    "description": "Coimbatore-based exporter specialising in bulk stationery for B2B clients."
+  },
+  {
+    "id": "u_b1c28e682f28ebb6",
+    "email": "ishitamirza@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ishita Mirza",
+    "role": "seller",
+    "company": "Vasudev Spice Mart",
+    "description": "Bulk supplier with cold-chain logistics from our Kolkata facility.",
+    "createdAt": 1775751758215
+  },
+  {
+    "id": "u_a867d0b7ba0f5112",
+    "email": "zaramalhotra@royalspices.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Zara Malhotra",
+    "role": "seller",
+    "company": "Royal Spices",
+    "description": "Family wholesaler with three generations of trade experience in Agra.",
+    "createdAt": 1776749888287
+  },
+  {
+    "id": "u_ac25c777fc59f91f",
+    "email": "aarohichatterjee@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aarohi Chatterjee",
+    "role": "seller",
+    "company": "Bharat Tea Co.",
+    "description": "Cooperative of Tamil Nadu producers offering farm-fresh snacks at scale.",
+    "createdAt": 1772922121477
+  },
+  {
+    "id": "u_49e66aa27ab6f031",
+    "email": "deepamalhotra@freshfarms.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Deepa Malhotra",
+    "role": "seller",
+    "company": "Fresh Farms",
+    "description": "Family-run business supplying premium dairy across Ludhiana and beyond.",
+    "createdAt": 1775871417793
+  },
+  {
+    "id": "u_17748a9317d0cd83",
+    "email": "zarasingh@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Zara Singh",
+    "role": "seller",
+    "company": "Sangam Textiles",
+    "description": "Family wholesaler with three generations of trade experience in Mumbai.",
+    "createdAt": 1773470615756
+  },
+  {
+    "id": "u_7549409c2d407e71",
+    "email": "ravimurthy@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ravi Murthy",
+    "role": "seller",
+    "company": "Krishna Cotton",
+    "description": "Family-run business supplying premium organic produce across Bengaluru and beyond.",
+    "createdAt": 1772322541342
+  },
+  {
+    "id": "u_11fde9e53eed5aae",
+    "email": "vihaangarg@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vihaan Garg",
+    "role": "seller",
+    "company": "Royal Spices — Ludhiana",
+    "description": "Cooperative of Punjab producers offering farm-fresh textiles at scale.",
+    "createdAt": 1775593185975
+  },
+  {
+    "id": "u_13746f211d647248",
+    "email": "nehasingh@rajasthanmarbl.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Neha Singh",
+    "role": "seller",
+    "company": "Rajasthan Marble Co.",
+    "description": "Trusted wholesale partner for retailers, with 33 years in Patna.",
+    "createdAt": 1776056540498
+  },
+  {
+    "id": "u_1599d7bbd84504a9",
+    "email": "yashpillai@nilgiriteagrow.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Yash Pillai",
+    "role": "seller",
+    "company": "Nilgiri Tea Growers",
+    "description": "Boutique manufacturer focused on quality dairy. Based in Kochi.",
+    "createdAt": 1775291867584
+  },
+  {
+    "id": "u_a5b99c4b59db2b2c",
+    "email": "shrutichatterjee@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Shruti Chatterjee",
+    "role": "seller",
+    "company": "Konkan Cashew Co.",
+    "description": "Family-run business supplying premium textiles across Nagpur and beyond.",
+    "createdAt": 1773379212783
+  },
+  {
+    "id": "u_415eece2b4e97bf9",
+    "email": "kabirhussain@wholesalehub.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Kabir Hussain",
+    "role": "seller",
+    "company": "Wholesale Hub",
+    "description": "Bulk supplier with cold-chain logistics from our Delhi facility.",
+    "createdAt": 1775127234630
+  },
+  {
+    "id": "u_fe580c4f44630bfb",
+    "email": "atharvhegde@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Atharv Hegde",
+    "role": "seller",
+    "company": "Heritage Crafts",
+    "description": "Bulk supplier with cold-chain logistics from our Kolkata facility.",
+    "createdAt": 1774603229382
+  },
+  {
+    "id": "u_d520b3fe1b78b004",
+    "email": "latachopra@greenfieldagro.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Lata Chopra",
+    "role": "seller",
+    "company": "Greenfield Agro",
+    "description": "Family-run business supplying premium hardware across Vadodara and beyond.",
+    "createdAt": 1774936007624
+  },
+  {
+    "id": "u_a992e51d22487152",
+    "email": "ayaansharma@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ayaan Sharma",
+    "role": "seller",
+    "company": "Sharma Enterprises",
+    "description": "Bulk supplier with cold-chain logistics from our Delhi facility.",
+    "createdAt": 1775668802753
+  },
+  {
+    "id": "u_9d26b50ada832ddb",
+    "email": "saanvibanerjee@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Saanvi Banerjee",
+    "role": "seller",
+    "company": "Golden Grains",
+    "description": "Family-run business supplying premium hardware across Chennai and beyond.",
+    "createdAt": 1772748702187
+  },
+  {
+    "id": "u_5666ce35260522f4",
+    "email": "adityasheikh@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aditya Sheikh",
+    "role": "seller",
+    "company": "Coromandel Spices",
+    "description": "Family-run business supplying premium organic produce across Lucknow and beyond.",
+    "createdAt": 1773249032991
+  },
+  {
+    "id": "u_719780e61e4914b4",
+    "email": "shrutidesai@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Shruti Desai",
+    "role": "seller",
+    "company": "Silk Route",
+    "description": "Boutique manufacturer focused on quality textiles. Based in Guwahati.",
+    "createdAt": 1776821292395
+  },
+  {
+    "id": "u_ef5f5c402902b800",
+    "email": "naveenkhan@apexmanufactur.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Naveen Khan",
+    "role": "seller",
+    "company": "Apex Manufacturers",
+    "description": "Verified seller delivering consistent quality organic produce to Patna businesses.",
+    "createdAt": 1777073776359
+  },
+  {
+    "id": "u_9b6320adda349074",
+    "email": "ashokmishra@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ashok Mishra",
+    "role": "seller",
+    "company": "Pioneer Tools",
+    "description": "Boutique manufacturer focused on quality grains. Based in Mumbai.",
+    "createdAt": 1776331413000
+  },
+  {
+    "id": "u_d382bec31dcefdc5",
+    "email": "anandkumar@kumarbros.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Anand Kumar",
+    "role": "seller",
+    "company": "Kumar Bros.",
+    "description": "Bulk supplier with cold-chain logistics from our Kanpur facility.",
+    "createdAt": 1776913946401
+  },
+  {
+    "id": "u_0fae7cc6f35bccc4",
+    "email": "ashokreddy@punjabdairyfoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ashok Reddy",
+    "role": "seller",
+    "company": "Punjab Dairy Foods",
+    "description": "Bulk supplier with cold-chain logistics from our Thiruvananthapuram facility.",
+    "createdAt": 1774068669744
+  },
+  {
+    "id": "u_01779388a11c498d",
+    "email": "bhavnagarg@pioneertoolspa.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Bhavna Garg",
+    "role": "seller",
+    "company": "Pioneer Tools — Patna",
+    "description": "Family wholesaler with three generations of trade experience in Coimbatore.",
+    "createdAt": 1775038585472
+  },
+  {
+    "id": "u_6509184a731afe61",
+    "email": "ashanair@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Asha Nair",
+    "role": "seller",
+    "company": "Prime Producers",
+    "description": "Cooperative of Konkan producers offering farm-fresh grains at scale.",
+    "createdAt": 1772524686279
+  },
+  {
+    "id": "u_84d80a0aeb834e29",
+    "email": "aryanpandey@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aryan Pandey",
+    "role": "seller",
+    "company": "Pandey Trading Co.",
+    "description": "Bulk supplier with cold-chain logistics from our Nashik facility.",
+    "createdAt": 1773656786492
+  },
+  {
+    "id": "u_a9bfb0129208e0e0",
+    "email": "hemaverma@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Hema Verma",
+    "role": "seller",
+    "company": "Kerala Coir Works",
+    "description": "Direct-from-source supplier of snacks. Pan-India shipping from Amritsar.",
+    "createdAt": 1774873933686
+  },
+  {
+    "id": "u_c6a7aefc9ea8f825",
+    "email": "ashokbhalla@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ashok Bhalla",
+    "role": "seller",
+    "company": "Konark Handlooms",
+    "description": "Verified seller delivering consistent quality dry fruits to Chennai businesses.",
+    "createdAt": 1772732067084
+  },
+  {
+    "id": "u_c530ed1887947a1a",
+    "email": "paritrivedi@himalayanherbs.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Pari Trivedi",
+    "role": "seller",
+    "company": "Himalayan Herbs",
+    "description": "Family wholesaler with three generations of trade experience in Visakhapatnam.",
+    "createdAt": 1775198276419
+  },
+  {
+    "id": "u_9bcf915afcc30269",
+    "email": "ayaanpatil@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ayaan Patil",
+    "role": "seller",
+    "company": "Royal Spices — Kolkata",
+    "description": "Direct-from-source supplier of snacks. Pan-India shipping from Kolkata.",
+    "createdAt": 1773002976044
+  },
+  {
+    "id": "u_cc9667160a17bf3d",
+    "email": "vihaangoyal@agrotraders.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vihaan Goyal",
+    "role": "seller",
+    "company": "Agro Traders",
+    "description": "Boutique manufacturer focused on quality grains. Based in Vadodara.",
+    "createdAt": 1775836150655
+  },
+  {
+    "id": "u_d70fa977ddcd3050",
+    "email": "harishpawar@jindalmetals.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Harish Pawar",
+    "role": "seller",
+    "company": "Jindal Metals",
+    "description": "Varanasi-based exporter specialising in bulk snacks for B2B clients.",
+    "createdAt": 1776738243363
+  },
+  {
+    "id": "u_4cb0b2d94cc0098a",
+    "email": "aarohisheikh@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aarohi Sheikh",
+    "role": "seller",
+    "company": "Saraswati Garments",
+    "description": "Cooperative of Konkan producers offering farm-fresh dairy at scale.",
+    "createdAt": 1776834623024
+  },
+  {
+    "id": "u_5d3483cc250fe917",
+    "email": "parimittal@kalingaseafood.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Pari Mittal",
+    "role": "seller",
+    "company": "Kalinga Seafoods",
+    "description": "Indore-based exporter specialising in bulk snacks for B2B clients.",
+    "createdAt": 1775230933608
+  },
+  {
+    "id": "u_e46ea1433f258aca",
+    "email": "ashasingh@tatawholesale.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Asha Singh",
+    "role": "seller",
+    "company": "Tata Wholesale",
+    "description": "Family-run business supplying premium organic produce across Coimbatore and beyond.",
+    "createdAt": 1774880178104
+  },
+  {
+    "id": "u_4e9505196c9df984",
+    "email": "hemasaxena@tatawholesalek.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Hema Saxena",
+    "role": "seller",
+    "company": "Tata Wholesale — Kanpur",
+    "description": "Bulk supplier with cold-chain logistics from our Lucknow facility.",
+    "createdAt": 1775377710816
+  },
+  {
+    "id": "u_a65995eb7d718a35",
+    "email": "kabirgoel@aryanhardware.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Kabir Goel",
+    "role": "seller",
+    "company": "Aryan Hardware",
+    "description": "Bulk supplier with cold-chain logistics from our Agra facility.",
+    "createdAt": 1774863225354
+  },
+  {
+    "id": "u_e9a0ab927fc8ad58",
+    "email": "yashbanerjee@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Yash Banerjee",
+    "role": "seller",
+    "company": "Anand Exporters",
+    "description": "Verified seller delivering consistent quality hardware to Vadodara businesses.",
+    "createdAt": 1776795435110
+  },
+  {
+    "id": "u_fffe7ab2adf300fe",
+    "email": "krishnasingh@konkancashewco.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Krishna Singh",
+    "role": "seller",
+    "company": "Konkan Cashew Co. — Surat",
+    "description": "Cooperative of Kerala producers offering farm-fresh dairy at scale.",
+    "createdAt": 1773385068251
+  },
+  {
+    "id": "u_3349f7edf06e2ea7",
+    "email": "sandeeppatil@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sandeep Patil",
+    "role": "seller",
+    "company": "Chettinad Foods",
+    "description": "Bulk supplier with cold-chain logistics from our Pune facility.",
+    "createdAt": 1775521512614
+  },
+  {
+    "id": "u_c5313460d5e7c4c7",
+    "email": "siyaaggarwal@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Siya Aggarwal",
+    "role": "seller",
+    "company": "Chettinad Foods — Guwahati",
+    "description": "Family-run business supplying premium beverages across Delhi and beyond.",
+    "createdAt": 1773632252687
+  },
+  {
+    "id": "u_c4c8f62fd01c6f0a",
+    "email": "bharatagarwal@goacashewexpor.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Bharat Agarwal",
+    "role": "seller",
+    "company": "Goa Cashew Exports",
+    "description": "Bulk supplier with cold-chain logistics from our Bengaluru facility.",
+    "createdAt": 1774281724220
+  },
+  {
+    "id": "u_dc5ffea923045eb6",
+    "email": "bharatsethi@gokuldairy.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Bharat Sethi",
+    "role": "seller",
+    "company": "Gokul Dairy",
+    "description": "Boutique manufacturer focused on quality textiles. Based in Jaipur.",
+    "createdAt": 1776293074046
+  },
+  {
+    "id": "u_1ead36ca688ecedd",
+    "email": "sunitasaha@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sunita Saha",
+    "role": "seller",
+    "company": "Saha & Sons",
+    "description": "GST-registered MSME serving HoReCa and retail buyers since 2012.",
+    "createdAt": 1774601449570
+  },
+  {
+    "id": "u_b459c8466fafaecd",
+    "email": "yashroy@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Yash Roy",
+    "role": "seller",
+    "company": "Roy Bros.",
+    "description": "Bulk supplier with cold-chain logistics from our Mysuru facility.",
+    "createdAt": 1772140455664
+  },
+  {
+    "id": "u_226337baa647ed9a",
+    "email": "atharviyer@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Atharv Iyer",
+    "role": "seller",
+    "company": "Dakshin Agro",
+    "description": "Family-run business supplying premium beverages across Visakhapatnam and beyond.",
+    "createdAt": 1774730002248
+  },
+  {
+    "id": "u_2589ea6022e86f31",
+    "email": "dineshreddy@agrotradersnag.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dinesh Reddy",
+    "role": "seller",
+    "company": "Agro Traders — Nagpur",
+    "description": "Ranchi-based exporter specialising in bulk beverages for B2B clients.",
+    "createdAt": 1776744655544
+  },
+  {
+    "id": "u_d24ab37f6f3bb9cd",
+    "email": "naveenmehta@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Naveen Mehta",
+    "role": "seller",
+    "company": "Ashirwad Oils",
+    "description": "Bulk supplier with cold-chain logistics from our Nashik facility.",
+    "createdAt": 1774020316248
+  },
+  {
+    "id": "u_f56cbbfe3c10c94e",
+    "email": "reenamukherjee@gokuldairyvado.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Reena Mukherjee",
+    "role": "seller",
+    "company": "Gokul Dairy — Vadodara",
+    "description": "Boutique manufacturer focused on quality dairy. Based in Kolkata.",
+    "createdAt": 1774100908699
+  },
+  {
+    "id": "u_1a025c9424c46476",
+    "email": "aanyagoel@goelsons.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aanya Goel",
+    "role": "seller",
+    "company": "Goel & Sons",
+    "description": "Trusted wholesale partner for retailers, with 32 years in Thiruvananthapuram.",
+    "createdAt": 1776337251333
+  },
+  {
+    "id": "u_dec48d7c5d95cda5",
+    "email": "aryanchoudhary@goacashewexpor.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aryan Choudhary",
+    "role": "seller",
+    "company": "Goa Cashew Exports — Amritsar",
+    "description": "Amritsar-based exporter specialising in bulk spices for B2B clients.",
+    "createdAt": 1774165889114
+  },
+  {
+    "id": "u_5f3040dd2254ae47",
+    "email": "maheshsen@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Mahesh Sen",
+    "role": "seller",
+    "company": "Indus Trading",
+    "description": "Direct-from-source supplier of snacks. Pan-India shipping from Mysuru.",
+    "createdAt": 1773170617637
+  },
+  {
+    "id": "u_123ec6bf927fe001",
+    "email": "sureshdas@maharajafoods.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Suresh Das",
+    "role": "seller",
+    "company": "Maharaja Foods",
+    "description": "Trusted wholesale partner for retailers, with 13 years in Delhi.",
+    "createdAt": 1772812056398
+  },
+  {
+    "id": "u_84fd7264bf10cb88",
+    "email": "dineshchatterjee@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dinesh Chatterjee",
+    "role": "seller",
+    "company": "Ashirwad Oils — Thiruvananthapuram",
+    "description": "Direct-from-source supplier of snacks. Pan-India shipping from Amritsar.",
+    "createdAt": 1776079814821
+  },
+  {
+    "id": "u_ec7479dd881c5de4",
+    "email": "avnimirza@himalayanherbs.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Avni Mirza",
+    "role": "seller",
+    "company": "Himalayan Herbs — Chennai",
+    "description": "Family wholesaler with three generations of trade experience in Mysuru.",
+    "createdAt": 1772504366121
+  },
+  {
+    "id": "u_0ad593b707cae23c",
+    "email": "karanpawar@heritagecrafts.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Karan Pawar",
+    "role": "seller",
+    "company": "Heritage Crafts — Madurai",
+    "description": "Direct-from-source supplier of dry fruits. Pan-India shipping from Varanasi.",
+    "createdAt": 1775072901838
+  },
+  {
+    "id": "u_d95de9420f4a2bc9",
+    "email": "aadhyamurthy@coastalexports.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aadhya Murthy",
+    "role": "seller",
+    "company": "Coastal Exports",
+    "description": "Trusted wholesale partner for retailers, with 15 years in Patna.",
+    "createdAt": 1772096250087
+  },
+  {
+    "id": "u_ab75b2086552844d",
+    "email": "karanbose@spicebazaar.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Karan Bose",
+    "role": "seller",
+    "company": "Spice Bazaar",
+    "description": "Family wholesaler with three generations of trade experience in Agra.",
+    "createdAt": 1774972051329
+  },
+  {
+    "id": "u_632ae53c6aa9a621",
+    "email": "riyapawar@punjabdairyfoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Riya Pawar",
+    "role": "seller",
+    "company": "Punjab Dairy Foods — Kolkata",
+    "description": "Verified seller delivering consistent quality textiles to Guwahati businesses.",
+    "createdAt": 1773412358450
+  },
+  {
+    "id": "u_bac4ead71266e7d4",
+    "email": "soniaali@alitradingco.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sonia Ali",
+    "role": "seller",
+    "company": "Ali Trading Co.",
+    "description": "Verified seller delivering consistent quality grains to Bengaluru businesses.",
+    "createdAt": 1776628227407
+  },
+  {
+    "id": "u_435465c3c1aa51fa",
+    "email": "dineshrao@patelplastics.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dinesh Rao",
+    "role": "seller",
+    "company": "Patel Plastics",
+    "description": "Verified seller delivering consistent quality stationery to Hyderabad businesses.",
+    "createdAt": 1776299922549
+  },
+  {
+    "id": "u_fecb5ccf479fb7df",
+    "email": "hemabanerjee@nilgiriteagrow.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Hema Banerjee",
+    "role": "seller",
+    "company": "Nilgiri Tea Growers — Varanasi",
+    "description": "GST-registered MSME serving HoReCa and retail buyers since 1997.",
+    "createdAt": 1776562475287
+  },
+  {
+    "id": "u_1f8d5d247a25bd0e",
+    "email": "anitaaggarwal@restaurantpro.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Anita Aggarwal",
+    "role": "buyer",
+    "company": "Restaurant Pro",
+    "description": "Online D2C brand needing reliable bulk supply across India.",
+    "createdAt": 1774603006424
+  },
+  {
+    "id": "u_6afb2710d67e5bba",
+    "email": "sandeepaggarwal@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sandeep Aggarwal",
+    "role": "buyer",
+    "company": "Wellness Mart",
+    "description": "School and hostel mess procurement officer based in Ranchi.",
+    "createdAt": 1777133077767
+  },
+  {
+    "id": "u_81e88ee332bc9cda",
+    "email": "kiarakhanna@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Kiara Khanna",
+    "role": "buyer",
+    "company": "Fashion Bazaar",
+    "description": "Restaurant group sourcing daily fresh dry fruits for our Varanasi kitchens.",
+    "createdAt": 1772352466539
+  },
+  {
+    "id": "u_cd00e291f8753c36",
+    "email": "poojakhanna@freshpickstore.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Pooja Khanna",
+    "role": "buyer",
+    "company": "Fresh Pick Stores",
+    "description": "Restaurant group sourcing daily fresh spices for our Kolkata kitchens.",
+    "createdAt": 1774337964552
+  },
+  {
+    "id": "u_b0fc4f3a84e6e377",
+    "email": "madhuridesai@desaienterpris.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Madhuri Desai",
+    "role": "buyer",
+    "company": "Desai Enterprises",
+    "description": "Independent retailer buying bulk for two stores in Jaipur.",
+    "createdAt": 1773372230556
+  },
+  {
+    "id": "u_a2c5c15ffc1a6caf",
+    "email": "mukeshchoudhary@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Mukesh Choudhary",
+    "role": "buyer",
+    "company": "Caterers Choice",
+    "description": "Restaurant group sourcing daily fresh beverages for our Varanasi kitchens.",
+    "createdAt": 1776669866904
+  },
+  {
+    "id": "u_9dc2197402188279",
+    "email": "avnisayyad@fashionbazaarg.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Avni Sayyad",
+    "role": "buyer",
+    "company": "Fashion Bazaar — Guwahati",
+    "description": "Amritsar-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1772816699271
+  },
+  {
+    "id": "u_ce3034ae3dd0d78c",
+    "email": "reenabanerjee@retailmart.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Reena Banerjee",
+    "role": "buyer",
+    "company": "Retail Mart",
+    "description": "Exporter sourcing high-quality hardware for international buyers.",
+    "createdAt": 1776662907853
+  },
+  {
+    "id": "u_7e1194566fe6637d",
+    "email": "poojagulati@gulatibrothers.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Pooja Gulati",
+    "role": "buyer",
+    "company": "Gulati Brothers",
+    "description": "Restaurant group sourcing daily fresh organic produce for our Surat kitchens.",
+    "createdAt": 1773226050913
+  },
+  {
+    "id": "u_b355f3c269cf48d9",
+    "email": "ishitadesai@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ishita Desai",
+    "role": "buyer",
+    "company": "More Stores",
+    "description": "Independent retailer buying bulk for two stores in Nagpur.",
+    "createdAt": 1776694154142
+  },
+  {
+    "id": "u_f0c2e97f959baa8e",
+    "email": "krishnamehta@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Krishna Mehta",
+    "role": "buyer",
+    "company": "Mehta Agencies",
+    "description": "Operating a chain of retail outlets in Coimbatore. Looking for steady wholesale partners.",
+    "createdAt": 1772027028089
+  },
+  {
+    "id": "u_3541eabc396d2e51",
+    "email": "priyahussain@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Priya Hussain",
+    "role": "buyer",
+    "company": "Apna Bazaar",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1776860445088
+  },
+  {
+    "id": "u_39cb3821c4e2db7b",
+    "email": "manojgarg@greencart.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Manoj Garg",
+    "role": "buyer",
+    "company": "Green Cart",
+    "description": "Exporter sourcing high-quality textiles for international buyers.",
+    "createdAt": 1773036113725
+  },
+  {
+    "id": "u_d709d477c581194b",
+    "email": "vivaanpandey@kitchenessenti.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vivaan Pandey",
+    "role": "buyer",
+    "company": "Kitchen Essentials",
+    "description": "School and hostel mess procurement officer based in Mysuru.",
+    "createdAt": 1774437248809
+  },
+  {
+    "id": "u_66b2d1e87698f592",
+    "email": "deeparao@nestmart.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Deepa Rao",
+    "role": "buyer",
+    "company": "Nest Mart",
+    "description": "School and hostel mess procurement officer based in Thiruvananthapuram.",
+    "createdAt": 1776629455169
+  },
+  {
+    "id": "u_79f4d348ce37f451",
+    "email": "poojaverma@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Pooja Verma",
+    "role": "buyer",
+    "company": "Organic Choice",
+    "description": "Supermarket chain focused on bulk monthly orders. Headquartered in Nagpur.",
+    "createdAt": 1773108714372
+  },
+  {
+    "id": "u_ba6e3558d8d293f6",
+    "email": "dhruvmirza@mirzaenterpris.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dhruv Mirza",
+    "role": "buyer",
+    "company": "Mirza Enterprises",
+    "description": "School and hostel mess procurement officer based in Thiruvananthapuram.",
+    "createdAt": 1772994197844
+  },
+  {
+    "id": "u_683a8d88241bca46",
+    "email": "yashbose@bosebros.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Yash Bose",
+    "role": "buyer",
+    "company": "Bose Bros.",
+    "description": "Coimbatore-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1773719957285
+  },
+  {
+    "id": "u_e9de48fed94a14ea",
+    "email": "meerachopra@relianceretail.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Meera Chopra",
+    "role": "buyer",
+    "company": "Reliance Retail Hub",
+    "description": "School and hostel mess procurement officer based in Jaipur.",
+    "createdAt": 1775732996151
+  },
+  {
+    "id": "u_459845d01e9f92c8",
+    "email": "sureshaggarwal@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Suresh Aggarwal",
+    "role": "buyer",
+    "company": "Metro Bulk Buyers",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1773502636588
+  },
+  {
+    "id": "u_b7c36e92f65fa2df",
+    "email": "vihaansharma@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vihaan Sharma",
+    "role": "buyer",
+    "company": "Chef's Pantry",
+    "description": "Operating a chain of retail outlets in Ranchi. Looking for steady wholesale partners.",
+    "createdAt": 1776999428163
+  },
+  {
+    "id": "u_e3bb1418ebec8a48",
+    "email": "bharatbhatia@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Bharat Bhatia",
+    "role": "buyer",
+    "company": "EcoMart",
+    "description": "Operating a chain of retail outlets in Ranchi. Looking for steady wholesale partners.",
+    "createdAt": 1772161058775
+  },
+  {
+    "id": "u_e236b9c9684b2129",
+    "email": "nitinsayyad@relianceretail.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Nitin Sayyad",
+    "role": "buyer",
+    "company": "Reliance Retail Hub — Kolkata",
+    "description": "Supermarket chain focused on bulk monthly orders. Headquartered in Ahmedabad.",
+    "createdAt": 1773506056762
+  },
+  {
+    "id": "u_54e64e7ba87d09b0",
+    "email": "mukeshali@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Mukesh Ali",
+    "role": "buyer",
+    "company": "Green Cart — Guwahati",
+    "description": "Operating a chain of retail outlets in Jaipur. Looking for steady wholesale partners.",
+    "createdAt": 1772736618375
+  },
+  {
+    "id": "u_df164be4005ef534",
+    "email": "aniliyer@healthyou.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Anil Iyer",
+    "role": "buyer",
+    "company": "Health & You",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1774254245770
+  },
+  {
+    "id": "u_6d65a18707146c5b",
+    "email": "navyakumar@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Navya Kumar",
+    "role": "buyer",
+    "company": "Kumar Trading Co.",
+    "description": "Online D2C brand needing reliable bulk supply across India.",
+    "createdAt": 1776624907517
+  },
+  {
+    "id": "u_8f02696218ac2df2",
+    "email": "mukeshsaha@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Mukesh Saha",
+    "role": "buyer",
+    "company": "Retail Mart — Hyderabad",
+    "description": "School and hostel mess procurement officer based in Delhi.",
+    "createdAt": 1775576902355
+  },
+  {
+    "id": "u_d5a620c1c81b9c01",
+    "email": "rakeshnair@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Rakesh Nair",
+    "role": "buyer",
+    "company": "Pure Source",
+    "description": "School and hostel mess procurement officer based in Amritsar.",
+    "createdAt": 1774809175914
+  },
+  {
+    "id": "u_99b949d28b9b4e40",
+    "email": "mirapandey@dmartbuyers.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Mira Pandey",
+    "role": "buyer",
+    "company": "D-Mart Buyers",
+    "description": "Operating a chain of retail outlets in Thiruvananthapuram. Looking for steady wholesale partners.",
+    "createdAt": 1772784980408
+  },
+  {
+    "id": "u_b3f3f4663b6bf06b",
+    "email": "saiqureshi@relianceretail.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sai Qureshi",
+    "role": "buyer",
+    "company": "Reliance Retail Hub — Varanasi",
+    "description": "Delhi-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1776176337877
+  },
+  {
+    "id": "u_40482f4c44604c4d",
+    "email": "krishnaverma@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Krishna Verma",
+    "role": "buyer",
+    "company": "Daily Needs",
+    "description": "Independent retailer buying bulk for two stores in Madurai.",
+    "createdAt": 1773254570886
+  },
+  {
+    "id": "u_453642032804d903",
+    "email": "arnavmittal@mittalenterpri.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Arnav Mittal",
+    "role": "buyer",
+    "company": "Mittal Enterprises",
+    "description": "School and hostel mess procurement officer based in Nashik.",
+    "createdAt": 1774308547828
+  },
+  {
+    "id": "u_f5e2f22bc6dd95de",
+    "email": "vivaanmishra@horecasupplies.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vivaan Mishra",
+    "role": "buyer",
+    "company": "HORECA Supplies",
+    "description": "Procurement lead for a HoReCa group with outlets in Coimbatore and nearby towns.",
+    "createdAt": 1776902659916
+  },
+  {
+    "id": "u_01a04cb79f98a421",
+    "email": "anitagulati@gulatisons.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Anita Gulati",
+    "role": "buyer",
+    "company": "Gulati & Sons",
+    "description": "Operating a chain of retail outlets in Madurai. Looking for steady wholesale partners.",
+    "createdAt": 1774723826648
+  },
+  {
+    "id": "u_be0f282650da9c81",
+    "email": "snehamukherjee@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sneha Mukherjee",
+    "role": "buyer",
+    "company": "Banquet Wholesale",
+    "description": "Lucknow-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1772648969068
+  },
+  {
+    "id": "u_92fc6e897b6d8ca2",
+    "email": "poojadeshmukh@deshmukhsons.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Pooja Deshmukh",
+    "role": "buyer",
+    "company": "Deshmukh & Sons",
+    "description": "Operating a chain of retail outlets in Jaipur. Looking for steady wholesale partners.",
+    "createdAt": 1772805007099
+  },
+  {
+    "id": "u_0469903f1c3604b2",
+    "email": "anitadeshmukh@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Anita Deshmukh",
+    "role": "buyer",
+    "company": "Fashion Bazaar — Varanasi",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1775291228585
+  },
+  {
+    "id": "u_e6c60fbe10c33e54",
+    "email": "vivaanali@pharmawholesal.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vivaan Ali",
+    "role": "buyer",
+    "company": "Pharma Wholesale",
+    "description": "School and hostel mess procurement officer based in Kanpur.",
+    "createdAt": 1774165617430
+  },
+  {
+    "id": "u_728bfd032cfc55de",
+    "email": "snehabhatia@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sneha Bhatia",
+    "role": "buyer",
+    "company": "Apparel Direct",
+    "description": "Online D2C brand needing reliable bulk supply across India.",
+    "createdAt": 1774368564067
+  },
+  {
+    "id": "u_cea354646d3d0e3c",
+    "email": "soniagulati@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sonia Gulati",
+    "role": "buyer",
+    "company": "Gulati Bros.",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1772706542073
+  },
+  {
+    "id": "u_f87a45f1bfd119e7",
+    "email": "siyadesai@starretail.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Siya Desai",
+    "role": "buyer",
+    "company": "Star Retail",
+    "description": "Bhopal-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1773054406603
+  },
+  {
+    "id": "u_a64a3955b31918e5",
+    "email": "dhruvmalhotra@malhotraagenci.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dhruv Malhotra",
+    "role": "buyer",
+    "company": "Malhotra Agencies",
+    "description": "Supermarket chain focused on bulk monthly orders. Headquartered in Ahmedabad.",
+    "createdAt": 1775687666683
+  },
+  {
+    "id": "u_d3ce5eb439aa2a54",
+    "email": "vinodrizvi@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Vinod Rizvi",
+    "role": "buyer",
+    "company": "Apparel Direct — Madurai",
+    "description": "Procurement lead for a HoReCa group with outlets in Vadodara and nearby towns.",
+    "createdAt": 1776894855168
+  },
+  {
+    "id": "u_ce63d99fe4249e87",
+    "email": "dhruvkhanna@outlook.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dhruv Khanna",
+    "role": "buyer",
+    "company": "MediPlus Distributors",
+    "description": "Online D2C brand needing reliable bulk supply across India.",
+    "createdAt": 1776385454170
+  },
+  {
+    "id": "u_3d02c5910b2939e5",
+    "email": "anilghosh@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Anil Ghosh",
+    "role": "buyer",
+    "company": "Ghosh Trading Co.",
+    "description": "Online D2C brand needing reliable bulk supply across India.",
+    "createdAt": 1776926051426
+  },
+  {
+    "id": "u_d6183b8d6654b067",
+    "email": "sandeeppawar@kitchenessenti.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Sandeep Pawar",
+    "role": "buyer",
+    "company": "Kitchen Essentials — Vadodara",
+    "description": "Independent retailer buying bulk for two stores in Mysuru.",
+    "createdAt": 1774630733998
+  },
+  {
+    "id": "u_a80a359c073944c6",
+    "email": "ravipatel@dmartbuyersdel.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ravi Patel",
+    "role": "buyer",
+    "company": "D-Mart Buyers — Delhi",
+    "description": "School and hostel mess procurement officer based in Amritsar.",
+    "createdAt": 1773760506727
+  },
+  {
+    "id": "u_b2e2909d764f0065",
+    "email": "naveengarg@rediffmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Naveen Garg",
+    "role": "buyer",
+    "company": "Kitchen Essentials — Indore",
+    "description": "Online D2C brand needing reliable bulk supply across India.",
+    "createdAt": 1773585152434
+  },
+  {
+    "id": "u_828aad2d91bdf56c",
+    "email": "madhuribose@yahoo.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Madhuri Bose",
+    "role": "buyer",
+    "company": "Smart Choice Stores",
+    "description": "Restaurant group sourcing daily fresh beverages for our Coimbatore kitchens.",
+    "createdAt": 1775485180688
+  },
+  {
+    "id": "u_db28cf4ccf9191e7",
+    "email": "jayaagarwal@bazaardirect.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Jaya Agarwal",
+    "role": "buyer",
+    "company": "Bazaar Direct",
+    "description": "Operating a chain of retail outlets in Indore. Looking for steady wholesale partners.",
+    "createdAt": 1776646222666
+  },
+  {
+    "id": "u_8abaf4534649c2e9",
+    "email": "ananyashah@chefspantrypun.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ananya Shah",
+    "role": "buyer",
+    "company": "Chef's Pantry — Pune",
+    "description": "School and hostel mess procurement officer based in Ranchi.",
+    "createdAt": 1776161935584
+  },
+  {
+    "id": "u_3ce3fc3a20ceaff9",
+    "email": "arjunkumar@hotmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Arjun Kumar",
+    "role": "buyer",
+    "company": "Pharma Wholesale — Varanasi",
+    "description": "Independent retailer buying bulk for two stores in Guwahati.",
+    "createdAt": 1774690730592
+  },
+  {
+    "id": "u_29c206c42af73c3c",
+    "email": "aanyachopra@gmail.com",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Aanya Chopra",
+    "role": "buyer",
+    "company": "MediPlus Distributors — Madurai",
+    "description": "Visakhapatnam-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1772433851494
+  },
+  {
+    "id": "u_3af150a7e92e8cdb",
+    "email": "ananyapillai@citysupermart.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ananya Pillai",
+    "role": "buyer",
+    "company": "City Supermart",
+    "description": "Supermarket chain focused on bulk monthly orders. Headquartered in Vadodara.",
+    "createdAt": 1775268253054
+  },
+  {
+    "id": "u_04169be238faf43d",
+    "email": "sureshbansal@kitchenessenti.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Suresh Bansal",
+    "role": "buyer",
+    "company": "Kitchen Essentials — Lucknow",
+    "description": "Mumbai-based distributor supplying to mom-and-pop stores across the region.",
+    "createdAt": 1774797880881
+  },
+  {
+    "id": "u_f9ae344452b22025",
+    "email": "ritusen@senenterprises.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Ritu Sen",
+    "role": "buyer",
+    "company": "Sen Enterprises",
+    "description": "Supermarket chain focused on bulk monthly orders. Headquartered in Agra.",
+    "createdAt": 1774835584891
+  },
+  {
+    "id": "u_f3d216fa022cdc6a",
+    "email": "kavitareddy@mediplusdistri.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Kavita Reddy",
+    "role": "buyer",
+    "company": "MediPlus Distributors — Nashik",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1773031794270
+  },
+  {
+    "id": "u_6acf22940c26fcbe",
+    "email": "dhruviyer@trendythreads.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Dhruv Iyer",
+    "role": "buyer",
+    "company": "Trendy Threads",
+    "description": "Hospital supplies buyer responsible for monthly procurement.",
+    "createdAt": 1773836419329
+  },
+  {
+    "id": "u_87d0cd73c26f58ec",
+    "email": "siyasheikh@puresourcepune.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Siya Sheikh",
+    "role": "buyer",
+    "company": "Pure Source — Pune",
+    "description": "Restaurant group sourcing daily fresh dairy for our Kochi kitchens.",
+    "createdAt": 1772395472390
+  },
+  {
+    "id": "u_16ad0f00f5afd494",
+    "email": "maheshpatel@pharmawholesal.in",
+    "password": "a6adae7c67f63259dc835db681dccb34:4a66e15dd381254a20a5f2e22303c94df32a03ad7441ffd3e773e632086becf190ecc6a031a623acccc33b508ddd314ea2dcddc45169e55e5283ff36e05d0d0e",
+    "name": "Mahesh Patel",
+    "role": "buyer",
+    "company": "Pharma Wholesale — Nashik",
+    "description": "Independent retailer buying bulk for two stores in Amritsar.",
+    "createdAt": 1773907566879
+  },
+  {
+    "id": "u_1c06f21f0b289d7a",
+    "email": "chat-buyer@test.in",
+    "password": "8bb2f33a2e44a6a992c7000e72ab1ed3:6ec3b7bb5b8d09a41947e15dee2bea516172edf6d07bca72d50f33ed0f0b6e3b288ce5b3738bee82492d85b51e5cb62e89a83846cc53d706271f447905521862",
+    "name": "Chat Buyer",
+    "role": "buyer",
+    "company": "Buyer Co",
+    "createdAt": 1777184009996
+  },
+  {
+    "id": "u_1a47e95cec219f6f",
+    "email": "chat-seller@test.in",
+    "password": "65ec0893710295b8f9e7ab9bdfd8885b:fbacf62da0ae649f8d87af61b4bd7b91a7d5e39fa644237e859a519e819b8ae86d8cfe060c0e64613cb5101633eaaa9d2f4c797578bb6bc602d6fb48f231395b",
+    "name": "Chat Seller",
+    "role": "seller",
+    "company": "Seller Co",
+    "createdAt": 1777184010072
+  }
+]

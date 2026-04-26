@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages · B2B Trade Portal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="/">
+          <div class="brand-mark">B2</div>
+          <span>B2B Trade Portal</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/products">Marketplace</a>
+          <a id="dash-link" href="/login">Dashboard</a>
+          <button id="logout-btn" class="btn btn-sm btn-ghost">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section chat-page-main">
+      <div class="page-header">
+        <div>
+          <h1>Messages</h1>
+          <p>Direct conversations with your buyers and sellers.</p>
+        </div>
+      </div>
+      <div id="inbox-root" class="inbox-shell"></div>
+    </main>
+
+    <script src="/script.js"></script>
+    <script src="/chat.js"></script>
+    <script>
+      (async function () {
+        let me;
+        try {
+          me = await TP.api.me();
+        } catch (e) {
+          window.location.href = "/login?next=/chat";
+          return;
+        }
+        if (!me || !me.user) {
+          window.location.href = "/login?next=/chat";
+          return;
+        }
+        const u = me.user;
+        document.getElementById("dash-link").href = TP.dashPathFor(u.role);
+        document.getElementById("dash-link").textContent =
+          u.role === "admin"
+            ? "Admin dashboard"
+            : u.role === "seller"
+              ? "Seller dashboard"
+              : "Buyer dashboard";
+        document
+          .getElementById("logout-btn")
+          .addEventListener("click", TP.logoutAndGo);
+
+        const root = document.getElementById("inbox-root");
+        const controller = TPChat.renderInbox(root, u);
+
+        // Allow deep-link: /chat?with=<userId>&name=<name>
+        const params = new URLSearchParams(window.location.search);
+        const withId = params.get("with");
+        const withName = params.get("name");
+        if (withId) {
+          setTimeout(() => controller.openWith(withId, withName || "User"), 250);
+        }
+      })();
+    </script>
+  </body>
+</html>

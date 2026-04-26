@@ -1,0 +1,39 @@
+[
+  {
+    "id": "m_f3ddc0fee1175b31",
+    "threadId": "u_1a47e95cec219f6f__u_1c06f21f0b289d7a",
+    "fromId": "u_1c06f21f0b289d7a",
+    "fromName": "Chat Buyer",
+    "fromRole": "buyer",
+    "toId": "u_1a47e95cec219f6f",
+    "toName": "Chat Seller",
+    "productId": "p_test",
+    "productName": "Saffron(Kesar)",
+    "body": "Hi, do you ship to Mumbai?",
+    "createdAt": 1777184029023,
+    "readAt": 1777184029239
+  },
+  {
+    "id": "m_521ecdfd6d7e0775",
+    "threadId": "u_1a47e95cec219f6f__u_1c06f21f0b289d7a",
+    "fromId": "u_1c06f21f0b289d7a",
+    "fromName": "Chat Buyer",
+    "fromRole": "buyer",
+    "toId": "u_1a47e95cec219f6f",
+    "toName": "Chat Seller",
+    "body": "What's the bulk discount on 50kg?",
+    "createdAt": 1777184029065,
+    "readAt": 1777184029239
+  },
+  {
+    "id": "m_1114de70688d472c",
+    "threadId": "u_1a47e95cec219f6f__u_1c06f21f0b289d7a",
+    "fromId": "u_1a47e95cec219f6f",
+    "fromName": "Chat Seller",
+    "fromRole": "seller",
+    "toId": "u_1c06f21f0b289d7a",
+    "toName": "Chat Buyer",
+    "body": "Yes, we ship pan-India. 50kg gets 12% off.",
+    "createdAt": 1777184029485
+  }
+]

@@ -1,0 +1,143 @@
+You are an expert full-stack developer.
+
+Build a COMPLETE, PROFESSIONAL, and FULLY RUNNABLE web application called:
+
+"B2B Trade Portal"
+
+This app connects small sellers with bulk buyers directly, removing middlemen.
+
+---
+
+## 🔥 CORE GOAL:
+- Small sellers can upload products
+- Large buyers can browse and purchase in bulk
+- Clean dashboard for both users
+- Transparent system
+
+---
+
+## ⚙️ TECH REQUIREMENTS:
+- Node.js + Express backend
+- No MongoDB (use in-memory or JSON file storage)
+- Frontend: HTML + CSS + Vanilla JavaScript
+- Use Express static to serve frontend
+
+---
+
+## 👥 USER ROLES:
+
+### 1. Seller:
+- Register/Login
+- Add product
+- View own products
+- View incoming orders
+
+### 2. Buyer:
+- Register/Login
+- Browse all products
+- Search/filter products
+- Place bulk orders
+- View order history
+
+---
+
+## 🌐 FRONTEND PAGES:
+
+1. Home Page
+   - Attractive landing page
+   - Navbar (Home, Login, Register)
+   - Project intro
+
+2. Login / Register Page
+
+3. Seller Dashboard
+   - Sidebar navigation
+   - Add Product form
+   - Product list (table/cards)
+   - Orders received
+
+4. Buyer Dashboard
+   - Sidebar navigation
+   - Product browsing section
+   - Search bar
+   - Order history
+
+5. Product Listing Page
+   - Cards layout
+   - Product name, price, quantity
+
+---
+
+## 🎨 UI DESIGN (VERY IMPORTANT):
+
+- Modern dashboard UI
+- Sidebar layout (left menu)
+- Cards for products
+- Clean spacing
+- Responsive design
+- Use CSS Flexbox/Grid
+- Use good colors (blue/white theme)
+
+---
+
+## 🧠 FEATURES:
+
+- Authentication system (simple, no JWT needed)
+- Product CRUD (add, view)
+- Order system (buyer places order → seller sees it)
+- Search/filter products
+- Role-based dashboard
+
+---
+
+## 📁 PROJECT STRUCTURE:
+
+/ (root)
+  server.js
+  package.json
+  /public
+    index.html
+    login.html
+    register.html
+    seller-dashboard.html
+    buyer-dashboard.html
+    style.css
+    script.js
+  /data
+    users.json
+    products.json
+    orders.json
+
+---
+
+## 🔌 API ENDPOINTS:
+
+- POST /register
+- POST /login
+- GET /products
+- POST /products
+- POST /orders
+- GET /orders
+
+---
+
+## 🚀 RUN REQUIREMENT:
+
+- Must run directly in Replit
+- Use one command: npm start
+- Show preview automatically
+
+---
+
+## ❗ IMPORTANT:
+
+- Give FULL working code
+- No missing files
+- No pseudo code
+- Everything should run perfectly
+
+---
+
+## 🎯 FINAL OUTPUT:
+
+Generate full code + explain how to run (short steps).
